@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  font-family: Poppins;
+  background: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  width: 500px;
+  height: 620px;
+  padding: 20px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(20px);
+  text-align: center;
+  border: 1px solid cyan;
+  box-shadow: 0 0 30px cyan;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  color: cyan;
+  text-shadow: 0 0 20px cyan;
+}
+
+#chat {
+  flex: 1;
+  overflow-y: auto;
+  margin: 10px 0;
+  padding: 10px;
+  background: rgba(0,0,0,0.3);
+  border-radius: 10px;
+}
+
+.message {
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 80%;
+  white-space: pre-line;
+}
+
+.user {
+  background: cyan;
+  color: black;
+  margin-left: auto;
+}
+
+.bot {
+  background: rgba(255,255,255,0.1);
+}
+
+.high {
+  background: rgba(255, 0, 0, 0.3);
+  border: 1px solid red;
+}
+
+.medium {
+  background: rgba(255, 165, 0, 0.3);
+  border: 1px solid orange;
+}
+
+.safe {
+  background: rgba(0, 255, 0, 0.2);
+  border: 1px solid lime;
+}
+
+.input-container {
+  display: flex;
+  gap: 10px;
+}
+
+input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background: rgba(255,255,255,0.1);
+  color: white;
+}
+
+button {
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: cyan;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#status {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #7fffd4;
+}

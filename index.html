@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TrustNet AI</title>
+
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<div class="card">
+  <h1>🛡️ TrustNet AI</h1>
+
+  <div id="chat"></div>
+
+  <div class="input-container">
+    <input id="text" placeholder="Type your message..." onkeypress="handleKeyPress(event)">
+    <button onclick="sendMessage()">Send</button>
+    <button onclick="startVoice()">🎤</button>
+  </div>
+
+  <div id="status">Connecting...</div>
+
+  <canvas id="chart"></canvas>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
